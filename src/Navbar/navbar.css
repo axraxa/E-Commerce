@@ -1,0 +1,165 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 25% 10px 25%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+}
+nav * {
+  display: flex;
+  align-items: center;
+}
+.nav-left {
+  font-size: 2rem;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.nav-left span {
+  color: red;
+}
+.nav-center ul {
+  column-gap: 20px;
+}
+.nav-center ul li {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.nav-center ul li::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  background-color: red;
+  bottom: -10px;
+  left: 0;
+
+  transition: 0.3s;
+}
+
+.nav-center ul li:hover::after {
+  width: 100%;
+}
+.nav-right {
+  font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+}
+.total-counter {
+  position: absolute;
+  top: 2.5px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+
+  font-size: 1.5rem;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* mobile, pad */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 48px;
+}
+.sidebar {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 999;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+
+  transition: 0.7s;
+}
+
+.sidebar header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sidebar header button {
+  cursor: pointer;
+  border-style: none;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sidebar ul li {
+  padding: 0 0 0 10px;
+  width: 100%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 60px;
+}
+.sidebar ul li:hover {
+  padding: 0 0 0 20px;
+  background-color: rgba(114, 114, 114, 0.651);
+}
+
+.sidebar .menuCart {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .menuCart .cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle {
+  left: 0;
+}
+
+/* styling link */
+li * {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+@media (max-width: 1600px) {
+  nav {
+    padding: 10px 20% 0 20%;
+  }
+}
+@media (max-width: 1050px) {
+  nav {
+    padding: 10px 20px 0 20px;
+  }
+  .nav-center,
+  .nav-right {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .toggle {
+    left: -100%;
+  }
+}

@@ -1,0 +1,10 @@
+.about-page {
+  flex: 1;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+  padding: 10px 10px;
+}

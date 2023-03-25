@@ -1,0 +1,49 @@
+.news {
+  margin: 150px auto;
+  width: 60%;
+}
+.news form {
+  display: flex;
+  align-items: center;
+  row-gap: 10px;
+}
+.news form * {
+  width: 50%;
+}
+.inputs {
+  display: flex;
+}
+.inputs button {
+  cursor: pointer;
+  width: 120px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+@media (max-width: 1200px) {
+  .news form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .news form * {
+    width: 70%;
+  }
+}
+@media (max-width: 1200px) {
+  .news form * {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputs {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
