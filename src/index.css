@@ -8,16 +8,13 @@ body {
   overflow-x: hidden;
 }
 
-/* footer */
-footer {
-  height: 80px;
-  width: 100%;
+button {
+  width: fit-content;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
   background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer h3 {
-  color: white;
+  color: red;
+  font-weight: bold;
 }

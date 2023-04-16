@@ -51,7 +51,7 @@
 .quantity button {
   width: 35px;
   padding: 10px 0;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   color: red;
   background-color: black;
@@ -70,11 +70,6 @@
 }
 .totalMoney * {
   margin: 0 0 5px 0;
-}
-.footerCart button {
-  width: fit-content;
-  color: red;
-  background-color: black;
 }
 
 @media (max-width: 1200px) {

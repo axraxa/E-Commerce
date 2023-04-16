@@ -24,6 +24,9 @@ main {
 }
 .left-side-categories {
   min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 ul {
   list-style-type: none;

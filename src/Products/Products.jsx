@@ -58,7 +58,7 @@ function Products() {
                   className={each.status}
                   key={index}
                 >
-                  {each.category}
+                  {each.category.toUpperCase()}
                 </li>
               );
             })}

@@ -163,3 +163,24 @@ li * {
     left: -100%;
   }
 }
+
+/* footer */
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h3 {
+  color: white;
+  max-width: fit-content;
+}
+
+@media (max-width: 768px) {
+  footer h3 {
+    font-size: 1rem;
+  }
+}

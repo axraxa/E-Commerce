@@ -15,7 +15,7 @@
 }
 .inputs button {
   cursor: pointer;
-  width: 120px;
+  width: fit-content;
   border: none;
   background-color: red;
   color: white;
@@ -23,7 +23,6 @@
   font-size: 1rem;
 
   padding: 5px 10px;
-  border-radius: 2px;
 }
 
 @media (max-width: 1200px) {
@@ -42,6 +41,9 @@
 }
 
 @media (max-width: 768px) {
+  .news {
+    width: 75%;
+  }
   .inputs {
     flex-direction: column;
     row-gap: 10px;

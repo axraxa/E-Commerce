@@ -28,7 +28,9 @@ function Navbar() {
         </ul>
       </div>
       <div className="nav-right">
-        <label>Cart</label>
+        <Link to="/cart" style={{ textDecoration: "none", color: "black" }}>
+          Cart
+        </Link>
         <Link to="/cart">
           <img src={cart} alt="cart" id="cart" />
         </Link>
@@ -88,7 +90,13 @@ function Sidebar() {
       </ul>
       <div className="menuCart">
         <div className="cart">
-          <label>Cart</label>
+          <Link
+            to="/cart"
+            style={{ textDecoration: "none", color: "black" }}
+            onClick={() => dispatch({ type: "sideBarManipulation" })}
+          >
+            Cart
+          </Link>
           <Link to="/cart">
             <img
               src={cart}

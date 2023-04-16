@@ -40,15 +40,6 @@
   font-size: 2rem;
 }
 
-button {
-  width: 100px;
-  padding: 5px 10px;
-  cursor: pointer;
-  background-color: black;
-  color: red;
-  font-weight: bold;
-}
-
 @media (max-width: 1220px) {
   .product-container {
     flex-direction: column;
@@ -57,6 +48,9 @@ button {
   }
   .right-descriptions {
     align-items: center;
+  }
+  .right-descriptions h4 {
+    font-size: 0.8rem;
   }
 }
 

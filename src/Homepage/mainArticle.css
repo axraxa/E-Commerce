@@ -33,7 +33,7 @@
 
 .left button {
   cursor: pointer;
-  width: 100px;
+  width: fit-content;
   border: none;
   background-color: var(--font-color);
   color: white;
@@ -41,7 +41,7 @@
   font-size: 1rem;
 
   padding: 5px 10px;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
